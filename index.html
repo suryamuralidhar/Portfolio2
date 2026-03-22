@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT -->
+<link href="font/urw-form-expand-light-italic.ttf" >
+  <link rel="stylesheet" href="style.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="nav">
+  <div class="nav-left">
+    <div class="logo">
+      <div></div><div></div><div></div><div></div>
+    </div>
+    <span><a href="index.html">Suryamuralidhar Loganathan</a></span>
+  </div>
+
+<button class="menu" onclick="openMenu()">Menu</button>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+
+  <!-- LEFT -->
+  <div class="left">
+    <div class="content">
+
+      <h1>
+        Suryamuralidhar<br>
+        Loganathan
+      </h1>
+
+      <p>Welcome to My Portfolio</p>
+
+      <button class="cta"><a href="#portfolio">Discover My Work</a></button>
+
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+    <img src="assets/1.png" alt="hero">
+  </div>
+
+  
+    
+</section>
+
+
+
+
+
+
+
+
+<!-- MENU OVERLAY -->
+<div id="menuOverlay" class="menu-overlay">
+
+  <div class="menu-panel">
+
+    <div class="menu-header">
+      <span>Menu</span>
+      <button onclick="closeMenu()">✕</button>
+    </div>
+
+    <div class="menu-links">
+      <a href="#hero" onclick="closeMenu()">Home</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="about" class="about">
+
+  <div class="about-container">
+
+    <h2>About Me</h2>
+
+    <h4>Innovative Architectural | Interior Designer</h4>
+
+    <p>
+      I am a passionate architecture graduate with a strong interest in design,
+      visualization, and creative problem-solving. I am proficient in tools such as 
+      <b>AutoCAD, 3ds Max, Corona Renderer, SketchUp, Lumion, Revit, Photoshop, D5 Render, and MS Office.</b> 
+      I am always eager to learn new tools and techniques, and I actively seek opportunities 
+      to grow and contribute meaningfully to projects. I am ready to collaborate, take on challenges, 
+      and continuously develop both professionally and personally.
+    </p>
+
+    <button class="about-btn">Learn More</button>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+<section class="about-image">
+  <img src="assets/about.png" alt="About Image">
+</section>
+
+
+
+
+
+
+<section id="services" class="services">
+
+  <div class="services-container">
+
+    <h2>Services</h2>
+
+    <div class="services-grid">
+
+      <div class="service">
+
+  <!-- ICON -->
+  <div class="service-icon">
+    <!-- GRID ICON -->
+    <svg viewBox="0 0 24 24">
+      <rect x="3" y="3" width="6" height="6"/>
+      <rect x="9" y="3" width="6" height="6"/>
+      <rect x="15" y="3" width="6" height="6"/>
+      <rect x="3" y="9" width="6" height="6"/>
+      <rect x="9" y="9" width="6" height="6"/>
+      <rect x="15" y="9" width="6" height="6"/>
+    </svg>
+  </div>
+
+  <h3>Architect | Interior Designer</h3>
+  <p>Creating functional and aesthetic interior spaces that reflect personality and purpose.</p>
+
+</div>
+
+      <div class="service">
+
+  <div class="service-icon">
+    <svg viewBox="0 0 24 24">
+      <polygon points="12,2 22,8 12,14 2,8"/>
+      <polygon points="2,8 12,14 12,22 2,16"/>
+      <polygon points="22,8 12,14 12,22 22,16"/>
+    </svg>
+  </div>
+
+  <h3>3D Visualization</h3>
+  <p>High-quality realistic renders to bring concepts to life before execution.</p>
+
+</div>
+
+      <div class="service">
+
+  <div class="service-icon">
+    <svg viewBox="0 0 24 24">
+      <path d="M3 10 L12 3 L21 10 V21 H3 Z"/>
+      <rect x="9" y="14" width="6" height="7"/>
+    </svg>
+  </div>
+
+  <h3>Space Planning</h3>
+  <p>Optimizing layouts to ensure efficient use of space with comfort and flow.</p>
+
+</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="portfolio" class="portfolio">
+  <div class="portfolio-header">
+
+    <h2>My Portfolio</h2>
+
+    <a href="https://heyzine.com/flip-book/476d31a320.html" target="_blank" class="view-btn">
+      View Portfolio
+    </a>
+
+  </div>
+  <div class="portfolio-grid">
+
+    <!-- CARD 1 -->
+    <div class="card">
+      <img src="assets/p1.png" alt="">
+      <div class="card-content">
+        <h3>Majlis Interior</h3>
+        <p>Luxury interior design inspired by traditional Arabic majlis style.</p>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <img src="assets/p2.png" alt="">
+      <div class="card-content">
+        <h3>Metro Station</h3>
+        <p>Modern metro station concept with structural elegance.</p>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <img src="assets/p3.png" alt="">
+      <div class="card-content">
+        <h3>Villa Design</h3>
+        <p>Contemporary villa with minimal and premium aesthetics.</p>
+      </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="card">
+      <img src="assets/p4.png" alt="">
+      <div class="card-content">
+        <h3>Living Space</h3>
+        <p>Soft neutral living room with warm lighting accents.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/p5.png" alt="">
+      <div class="card-content">
+        <h3>Luxury Lounge</h3>
+        <p>Elegant lounge space with modern finishes.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/p1.png" alt="">
+      <div class="card-content">
+        <h3>Bedroom Concept</h3>
+        <p>Warm and cozy bedroom with minimalist detailing.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="contact" class="contact">
+
+
+  <!-- BACKGROUND IMAGE -->
+  <div class="contact-bg">
+    <img src="assets/contact.png" alt="">
+  </div>
+
+  <!-- FORM CARD -->
+  <div class="contact-card">
+
+    <h2>GET IN TOUCH</h2>
+
+    <div class="line"></div>
+
+    <form>
+
+      <div class="row">
+        <input type="text" placeholder="First name *">
+        <input type="text" placeholder="Last name">
+      </div>
+
+      <input type="email" placeholder="Email *">
+
+      <textarea placeholder="Write a message"></textarea>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+  <!-- TOP NAME -->
+  <div class="footer-top">
+  <h2><a href="#hero">Suryamuralidhar Loganathan</a></h2>
+  </div>
+
+  <!-- LINE -->
+  <div class="footer-line"></div>
+
+  <!-- MAIN GRID -->
+  <div class="footer-grid">
+
+    <!-- LEFT -->
+<div class="footer-col">
+  
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/suryamuralidhar"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/suryamurali.als"><i class="fab fa-facebook-f"></i></a>
+  </div>
+
+  <a href="tel:+919894565903" class="footer-link">+91 9894565903</a>
+  <a href="mailto:suryamuralidhar.offi@gmail.com" class="footer-link">
+    suryamuralidhar.offi@gmail.com
+  </a>
+
+</div>
+
+<!-- CENTER -->
+<div class="footer-col center">
+  <a href="https://maps.app.goo.gl/x1h3qDEU4ievL7gm9"
+     target="_blank"
+     class="footer-link">
+     Namakkal , Tamil Nadu , India - 637003
+  </a>
+</div>
+
+    <!-- RIGHT -->
+    <div class="footer-col">
+     <p class="popup-trigger" onclick="openPopup('privacy')">Privacy Policy</p>
+<p class="popup-trigger" onclick="openPopup('access')">Accessibility Statement</p>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Designed by Suryamuralidhar Loganathan. All rights reserved.</p>
+  </div>
+
+</footer>
+
+<!-- ICONS CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+<div class="ripple-bg"></div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+
+
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+
+  <div class="popup-box">
+
+    <h3 id="popup-title"></h3>
+
+    <p id="popup-text"></p>
+
+    <button onclick="closePopup()">OK</button>
+
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
