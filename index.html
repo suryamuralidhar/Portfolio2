@@ -7,7 +7,7 @@
   <!-- FONT -->
 <link href="font/urw-form-expand-light-italic.ttf" >
   <link rel="stylesheet" href="style.css">
-
+<link rel="icon" href="assets/">
   <title>Portfolio</title>
 </head>
 <body>
@@ -15,9 +15,18 @@
 <!-- NAVBAR -->
 <div class="nav">
   <div class="nav-left">
-    <div class="logo">
-      <div></div><div></div><div></div><div></div>
-    </div>
+     <div class="logo-grid">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+
+
     <span><a href="index.html">Suryamuralidhar Loganathan</a></span>
   </div>
 
@@ -30,6 +39,7 @@
   <!-- LEFT -->
   <div class="left">
     <div class="content">
+   
 <div class="profile-pic">
   <img src="assets/suye.png" alt="profile">
 </div>
@@ -92,12 +102,7 @@
     <h4>Innovative Architectural | Interior Designer</h4>
 
     <p>
-      I am a passionate architecture graduate with a strong interest in design,
-      visualization, and creative problem-solving. I am proficient in tools such as 
-      <b>AutoCAD, 3ds Max, Corona Renderer, SketchUp, Lumion, Revit, Photoshop, D5 Render, and MS Office.</b> 
-      I am always eager to learn new tools and techniques, and I actively seek opportunities 
-      to grow and contribute meaningfully to projects. I am ready to collaborate, take on challenges, 
-      and continuously develop both professionally and personally.
+      I am an innovative and detail-oriented architecture graduate with a strong passion for design, visualization, and creative problem-solving. I possess hands-on experience with industry-standard tools including <b>AutoCAD, 3ds Max, Corona Renderer, SketchUp, Lumion, Revit, Photoshop, D5 Render, and MS Office</b>. My approach combines technical precision with creative thinking to deliver impactful and visually compelling design solutions. I am highly motivated to continuously learn, adapt to new technologies, and contribute effectively within collaborative environments. I am eager to take on challenging projects that support both professional growth and meaningful design outcomes.
     </p>
 
     <button class="about-btn">Learn More</button>
@@ -295,18 +300,20 @@
 
     <div class="line"></div>
 
-    <form>
+    <form id="contactForm">
 
-      <div class="row">
-        <input type="text" placeholder="First name *">
-        <input type="text" placeholder="Last name">
-      </div>
+  <div class="row">
+    <input type="text" name="first_name" placeholder="First name *">
+<input type="text" name="last_name" placeholder="Last name *">
+  </div>
 
-      <input type="email" placeholder="Email *">
+  <input type="email" name="email" placeholder="Email *" required>
 
-      <textarea placeholder="Write a message"></textarea>
+  <textarea name="message" placeholder="Write a message" required></textarea>
 
-    </form>
+  <button type="submit" class="btn-submit">SEND MESSAGE</button>
+
+</form>
 
   </div>
 
@@ -390,7 +397,7 @@
 
 
 
-<script src="script.js"></script>
+
 
 
 
@@ -413,6 +420,10 @@
 </div>
 
 
+<!-- EmailJS FIRST -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
+<!-- THEN your script -->
+<script src="script.js"></script>
 </body>
 </html>

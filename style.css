@@ -168,17 +168,101 @@ body{
 }
 
 /* LOGO */
-.logo{
-  width:34px;
-  height:34px;
-  border:1px solid #d6d6d6;
-  border-radius:8px;
-   
-  display:grid;
-  grid-template-columns:1fr 1fr;
-      text-decoration: none;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .logo-grid {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #999;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
+  padding: 6px;
 }
+
+.logo-grid div {
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+/* Custom layout (to match your image) */
+.logo-grid div:nth-child(1) {
+  grid-column: span 2;
+}
+.logo-grid div:nth-child(4) {
+  grid-row: span 2;
+}
+.logo-grid div:nth-child(7) {
+  grid-column: span 2;
+}
+
+.logo-grid:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-submit {
+  margin-top: 25px;
+  padding: 12px 28px;
+  border-radius: 50px; /* 🔥 fully rounded */
+  border: 1px solid #333;
+  background: transparent;
+  color: #333;
+  font-size: 13px;
+  margin-left: 60px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-submit:hover {
+  background: #333;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Click effect */
+.btn-submit:active {
+  transform: scale(0.96);
+}
+
+
+
+
+
 
 .logo div{
     
@@ -247,7 +331,7 @@ body{
   font-size:var(--subtitle-size);
   color:#6a6a6a;
   margin-bottom:var(--subtitle-gap);
-   transform: translateX(0px) translateY(-80px);
+   transform: translateX(15px) translateY(-80px);
   
   margin-left: 110px;
 }
@@ -261,7 +345,7 @@ body{
   background:transparent;
   font-size:14px;
   cursor:pointer;
-     transform: translateX(0px) translateY(-80px);
+     transform: translateX(20px) translateY(-80px);
 
     margin-left: 55px;
 
@@ -364,6 +448,7 @@ body{
 
 .about-image{
   width:100%;
+  height: 500px;
   overflow:hidden;
 }
 
