@@ -72,7 +72,7 @@ html{
   border:3px solid #eee;
 
   /* 🎮 FRAME CONTROL */
-  transform: translateX(-90px) translateY(100px);
+  transform: translateX(-90px) translateY(60px);
 }
 
 
@@ -204,18 +204,20 @@ body{
 
 /* HERO */
 .hero{
-  display:flex;
+ display:flex;
+  min-height:110vh;
+  height:auto;
   
-  height:101vh;
+  
 }
 
 /* LEFT SIDE */
 .left{
-    
-  width:var(--left-width);
-  background:#ffffff;
+  width:52%;
   display:flex;
   align-items:center;
+  justify-content:center;
+  flex-direction:column;   /* 🔥 ADD THIS */
 }
 
 /* CONTENT POSITION FIX */
@@ -228,6 +230,7 @@ body{
 /* TITLE */
 .content h1{
   font-size:var(--title-size);
+   transform: translateX(0px) translateY(-80px);
   font-weight:300;
   text-align: center;
   line-height:1.1;
@@ -238,12 +241,15 @@ body{
 }
 
 
-/* SUBTEXT */
+/* SUBTEXT ********************************************************************** */
 .content p{
+  
   font-size:var(--subtitle-size);
   color:#6a6a6a;
   margin-bottom:var(--subtitle-gap);
-  margin-left: 75px;
+   transform: translateX(0px) translateY(-80px);
+  
+  margin-left: 110px;
 }
 
 /* BUTTON */
@@ -255,7 +261,9 @@ body{
   background:transparent;
   font-size:14px;
   cursor:pointer;
-    margin-left: 35px;
+     transform: translateX(0px) translateY(-80px);
+
+    margin-left: 55px;
 
 }
 
@@ -546,9 +554,9 @@ body{
   padding:13px 40px;       /* BUTTON SIZE (height + width) */
 
   /* 🔹 POSITION CONTROLS */
-  position:relative;
+  position:right;
   top:-23px;                 /* move up (-) / down (+) */
-  left:-620px;                /* move right (+) / left (-) */
+  left:-720px;                /* move right (+) / left (-) */
 
   /* 🔹 STYLE */
   border-radius:999px;
